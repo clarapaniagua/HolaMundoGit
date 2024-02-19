@@ -2,13 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ED;
+package cuentas;
+/**
+ * 
+ * @author clara
+ */
 
 public class CCuenta {
+
+    public CCuenta(String antonio_López, String string, int par, int par1) {
+    }
 	
     public static void main(String[] args) {
     	// Depuracion. Se detiene siempre
-    	CCuenta miCuenta = new CCuenta();
+    	CCuenta miCuenta = new CCuenta("Antonio L\u00f3pez", "1000-2365-85-1230456789", 2500, 0);
     	
     	System.out.println("Saldo Incial: " + miCuenta.dSaldo + " euros");
     	// Depuracion. Provoca parada por ingreso con cantidad menor de 0
@@ -73,5 +80,9 @@ public class CCuenta {
         {
         	dSaldo = dSaldo - cantidad;
         }
+    }
+
+    double estado() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
